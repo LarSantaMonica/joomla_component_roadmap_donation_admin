@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="roadmapdonation"
+		label="COM_ROADMAPDONATION_GENERAL"
+		description="COM_ROADMAPDONATION_GENERAL_FIELDSET_DESC"
+		>
+		<field
+			name="redirect_edit"
+			type="list"
+			class="advancedSelect"
+			default="site"
+			label="COM_ROADMAPDONATION_REDIRECT_EDIT_LABEL"
+			description="COM_ROADMAPDONATION_REDIRECT_EDIT_DESC"
+			>
+			<option value="admin">JADMINISTRATOR</option>
+			<option value="site">JSITE</option>
+		</field>
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_roadmapdonation"
+			section="component"
+		/>
+	</fieldset>
+</config>
